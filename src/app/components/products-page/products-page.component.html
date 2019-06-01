@@ -1,0 +1,8 @@
+<button (click)="toggleCreatingProduct()" mat-raised-button
+        color="primary">{{productIsCreating ? "Отменить" : "Добавить товар"}}</button>
+<div *ngIf="productIsCreating" class="product-form-widget">
+  <app-product-form></app-product-form>
+</div>
+<div class="card-container">
+  <app-product *ngFor="let product of productService.getData()" [product]="product"></app-product>
+</div>

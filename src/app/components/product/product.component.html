@@ -1,0 +1,9 @@
+<mat-card class="card">
+  <mat-card-content>
+    <div><span class="product-name">{{product.name}}</span></div>
+    <div><a mat-button [href]="product.imageUrl" target="_blank">Ссылка на фотографию</a></div>
+    <button mat-button
+            (click)="product.toggleAdded()">{{product.isAdded ? "Удалить из корзины" : "Добавить в корзину"}}</button>
+  </mat-card-content>
+</mat-card>
+

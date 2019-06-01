@@ -1,0 +1,11 @@
+<div class="centered-container">
+  <form class="form-container" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="Название товара" formControlName="name" name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Ссылка на картинку товара" formControlName="imageUrl" name="imageUrl">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!productForm.valid">Создать</button>
+  </form>
+</div>

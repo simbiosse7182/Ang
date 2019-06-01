@@ -1,0 +1,16 @@
+.card-container{
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-container>*{
+  width: 100%;
+  max-width: 300px;
+  margin: 16px 16px 16px 0;
+}
+.product-form-widget {
+  padding:  16px 0;
+  max-width: 300px;
+  width: 100%;
+}
